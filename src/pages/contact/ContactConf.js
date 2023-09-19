@@ -38,7 +38,6 @@ export const ContactConf = (service) => {
           data: { firstName: data.firstName, image: data.photo },
         })
       );
-      onLoadContacts();
     }
   };
 

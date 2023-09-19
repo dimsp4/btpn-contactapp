@@ -12,8 +12,6 @@ import { onNavigate } from "../../navigation/RootNavigation";
 import { PATH } from "../../util/constant/Path";
 
 export default function ContactsTile({ item }) {
-  const type = useSelector((state) => state.app.formType);
-
   const [isImageAvailable, setIsImageAvailable] = useState(true);
 
   useEffect(() => {
@@ -23,8 +21,9 @@ export default function ContactsTile({ item }) {
   }, []);
 
   const isValidImageURL = (url) => {
+    const dataURLRegex = /^data:(image\/(jpeg|png|gif));base64,([A-Za-z0-9+/]+=*)$/i;
     const allowedExtensions = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i;
-    return allowedExtensions.test(url);
+    return allowedExtensions.test(url) || dataURLRegex.test(url);
   };
 
   const handleEditPress = async () => {
