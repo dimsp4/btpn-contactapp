@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "contactapp",
+    "name": "Contact App",
     "slug": "btpn-contactapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon-init.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-init.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FF6347"
+      "backgroundColor": "#ff6347"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -32,11 +32,6 @@
       "eas": {
         "projectId": "f16d8064-b85c-453a-bccd-3804f73735bd"
       }
-    },
-    "updates": {
-      "enabled": false,
-      "checkAutomatically": "NEVER",
-      "url": "https://u.expo.dev/f16d8064-b85c-453a-bccd-3804f73735bd"
     }
   }
 }

@@ -14,6 +14,7 @@ import RecentTile from "./components/RecentTile";
 import ContactsTile from "./components/ContactsTile";
 import { onNavigate } from "../navigation/RootNavigation";
 import { PATH } from "../util/constant/Path";
+import { SIZE } from "../util/constant/Size";
 
 export default function Home({ service }) {
   const dispatch = useDispatch();
@@ -136,7 +137,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 2,
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "stretch",
   },
   recent: {
     marginTop: 20,

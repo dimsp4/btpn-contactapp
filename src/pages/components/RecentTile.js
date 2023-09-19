@@ -26,7 +26,7 @@ export default function RecentTile({ image, firstName }) {
       ) : (
         <Image
           style={styles.circleImage}
-          source={require("../../../assets/noimage.jpg")} // Menampilkan gambar pengganti jika gambar tidak tersedia
+          source={require("../../../assets/noimage.jpg")} 
         />
       )}
       <Text>{firstName}</Text>

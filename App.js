@@ -17,7 +17,6 @@ export default function App() {
           <AppNavigation />
           <Loading />
           <ErrorPopup />
-          <StatusBar backgroundColor="tomato"/>
         </View>
       </DepProvider>
     </Provider>
