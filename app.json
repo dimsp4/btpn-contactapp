@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "btpn-contactapp",
+    "name": "contactapp",
     "slug": "btpn-contactapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,22 +9,34 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF6347"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dimsp4.btpncontactapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dimsp4.btpncontactapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f16d8064-b85c-453a-bccd-3804f73735bd"
+      }
+    },
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "NEVER",
+      "url": "https://u.expo.dev/f16d8064-b85c-453a-bccd-3804f73735bd"
     }
   }
 }
